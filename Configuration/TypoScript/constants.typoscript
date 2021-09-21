@@ -1,5 +1,7 @@
 # Load foreign extensions
 @import 'EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
+@import 'EXT:portal/Configuration/TypoScript/Components/LoginConstants.typoscript'
+
 
 # Core
 config.sendCacheHeaders = 0

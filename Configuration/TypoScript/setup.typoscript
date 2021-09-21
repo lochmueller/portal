@@ -1,4 +1,5 @@
 @import 'EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
+@import 'EXT:portal/Configuration/TypoScript/Components/Login.typoscript'
 
 page {
     includeJSFooterlibs.jquery = https://code.jquery.com/jquery-3.6.0.min.js
