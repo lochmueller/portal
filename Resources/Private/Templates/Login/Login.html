@@ -40,16 +40,16 @@
             <f:translate key="login"/>
         </legend>
         <div>
-            <label>
-                <f:translate key="username"/>
-                <f:form.textfield name="user"/>
-            </label>
+            <div class="form-floating mb-3">
+                <f:form.textfield name="user" id="user" class="form-control" />
+                <label for="user"><f:translate key="username"/></label>
+            </div>
         </div>
         <div>
-            <label>
-                <f:translate key="password"/>
-                <f:form.password name="pass" data="{rsa-encryption: ''}"/>
-            </label>
+            <div class="form-floating mb-3">
+                <f:form.password name="pass" id="pass" class="form-control" />
+                <label for="pass"><f:translate key="password"/></label>
+            </div>
         </div>
 
         <f:if condition="{permaloginStatus} > -1">
@@ -71,7 +71,7 @@
         </f:if>
 
         <div>
-            <f:form.submit value="{f:translate(key: 'login')}" name="submit"/>
+            <f:form.submit value="{f:translate(key: 'login')}" name="submit" class="btn btn-primary"/>
         </div>
 
         <div class="felogin-hidden">

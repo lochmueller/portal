@@ -19,7 +19,7 @@ $EM_CONF[$_EXTKEY] = [
     ],
     'autoload' => [
         'psr-4' => [
-            'FRUIT\\Portal\\' => 'Classes/'
+            'Lochmueller\\Portal\\' => 'Classes/'
         ],
     ],
 ];

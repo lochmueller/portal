@@ -4,7 +4,7 @@
   "description": "Portal for TYPO3",
   "autoload": {
     "psr-4": {
-      "FRUIT\\Portal\\": "Classes/"
+      "Lochmueller\\Portal\\": "Classes/"
     }
   },
   "keywords": [
