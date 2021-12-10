@@ -22,7 +22,11 @@
   "require": {
     "php": "^7.4",
     "typo3/cms-core": "^10.4",
-    "bk2k/bootstrap-package": "^12.0"
+    "typo3/cms-form": "^10.4",
+    "bk2k/bootstrap-package": "^12.0",
+    "evoweb/sf-register": "^10.1",
+    "friendsoftypo3/tt-address": "^5.3",
+    "causal/fal-protect": "^1.2"
   },
   "suggest": {
     "typo3/cms-felogin": "^10.4",

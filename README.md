@@ -1,13 +1,22 @@
 # EXT:portal
 
-> Easy to yous portal framework with many best practices.
+> Easy to use portal framework with many best practices.
 
 ## Integrations
 
-- EXT:felogin
-- EXT:tt_address
-- EXT:calendarize
-- EXT:news
+### Base 
+
+- EXT:bootstrap_package (For base styling and theming)
+- EXT:felogin (For login process)
+- EXT:sf_register (For Registration and edit profile functions)
+- EXT:fal_protect (for restrict access to FAL resources)
+
+### Modules
+
+- EXT:tt_address (Contact database)
+- EXT:calendarize (Eevnts)
+- EXT:news (News)
+- EXT:form (Custom Form processes)
 
 ## Credits
 

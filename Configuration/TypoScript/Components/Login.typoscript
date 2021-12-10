@@ -3,6 +3,6 @@
 plugin.tx_felogin_login.view {
     templateRootPaths {
         0 = EXT:felogin/Resources/Private/Templates/
-        10 = EXT:portal/Resources/Private/Templates/
+        10 = EXT:portal/Resources/Private/Templates/Login/
     }
 }

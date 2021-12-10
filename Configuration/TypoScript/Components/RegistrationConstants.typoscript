@@ -1,0 +1,7 @@
+@import 'EXT:sf_register/Configuration/TypoScript/minimal/constants.typoscript'
+
+plugin.tx_sfregister.view {
+    templateRootPath = EXT:portal/Resources/Private/Templates/SfRegister/
+    partialRootPath = EXT:portal/Resources/Private/Partials/SfRegister/
+    #layoutRootPath = EXT:portal/Resources/Private/Layouts/SfRegister/
+}

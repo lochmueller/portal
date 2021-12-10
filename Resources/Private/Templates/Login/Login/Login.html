@@ -39,17 +39,13 @@
         <legend>
             <f:translate key="login"/>
         </legend>
-        <div>
-            <div class="form-floating mb-3">
-                <f:form.textfield name="user" id="user" class="form-control" />
-                <label for="user"><f:translate key="username"/></label>
-            </div>
+        <div class="form-floating mb-3">
+            <f:form.textfield name="user" id="user" class="form-control" />
+            <label for="user"><f:translate key="username"/></label>
         </div>
-        <div>
-            <div class="form-floating mb-3">
-                <f:form.password name="pass" id="pass" class="form-control" />
-                <label for="pass"><f:translate key="password"/></label>
-            </div>
+        <div class="form-floating mb-3">
+            <f:form.password name="pass" id="pass" class="form-control" />
+            <label for="pass"><f:translate key="password"/></label>
         </div>
 
         <f:if condition="{permaloginStatus} > -1">
