@@ -2,6 +2,7 @@
 @import 'EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
 @import 'EXT:portal/Configuration/TypoScript/Components/LoginConstants.typoscript'
 @import 'EXT:portal/Configuration/TypoScript/Components/RegistrationConstants.typoscript'
+@import 'EXT:portal/Configuration/TypoScript/Components/NewsConstants.typoscript'
 
 
 # Core
