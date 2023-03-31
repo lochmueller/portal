@@ -43,14 +43,16 @@
     "issues": "https://github.com/lochmueller/portal/issues"
   },
   "require-dev": {
-    "typo3/testing-framework": "^6.3",
-    "squizlabs/php_codesniffer": "^2.6",
-    "friendsofphp/php-cs-fixer": "^2.16",
-    "phpmd/phpmd": "^2.4"
+    "typo3/testing-framework": "7.x-dev",
+    "friendsofphp/php-cs-fixer": "^3.15"
   },
   "config": {
     "vendor-dir": ".Build/vendor",
-    "bin-dir": ".Build/bin"
+    "bin-dir": ".Build/bin",
+    "allow-plugins": {
+      "typo3/cms-composer-installers": true,
+      "typo3/class-alias-loader": true
+    }
   },
   "extra": {
     "typo3/cms": {
@@ -63,10 +65,7 @@
     }
   },
   "scripts": {
-    "code": [
-      "@tool:php-cs-fixer"
-    ],
-    "tool:php-cs-fixer": [
+    "code-fix": [
       "php-cs-fixer fix --config Resources/Private/Build/PhpCsFixer.php"
     ]
   }

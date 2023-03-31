@@ -1,5 +1,7 @@
 <?php
 
+declare(strict_types=1);
+
 /**
  * $EM_CONF.
  */
@@ -14,12 +16,15 @@ $EM_CONF[$_EXTKEY] = [
     'author_email' => 'tim@fruit-lab.de',
     'constraints' => [
         'depends' => [
-            'bootstrap_package' => '12.0.0-0.0.0'
+            # Versions: Check composer.json
+            'news' => '*',
+            'tt_address' => '*',
+            'bootstrap_package' => '*',
         ],
     ],
     'autoload' => [
         'psr-4' => [
-            'Lochmueller\\Portal\\' => 'Classes/'
+            'Lochmueller\\Portal\\' => 'Classes/',
         ],
     ],
 ];
