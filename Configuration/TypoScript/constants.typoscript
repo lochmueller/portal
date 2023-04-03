@@ -1,33 +1,3 @@
-# Load foreign extensions
-@import 'EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
+@import 'EXT:portal/Configuration/TypoScript/Components/BootstrapConstants.typoscript'
 @import 'EXT:portal/Configuration/TypoScript/Components/LoginConstants.typoscript'
-@import 'EXT:portal/Configuration/TypoScript/Components/RegistrationConstants.typoscript'
 @import 'EXT:portal/Configuration/TypoScript/Components/NewsConstants.typoscript'
-
-
-# Core
-config.sendCacheHeaders = 0
-
-# EXT:bootstrap_package
-page {
-    preloader.enable = 0
-    logo {
-        file = EXT:calendarize_premium/Resources/Public/Icons/Extension.svg
-        fileInverted = EXT:calendarize_premium/Resources/Public/Icons/Extension.svg
-        width = 48
-        height = 48
-    }
-
-    theme {
-        meta {
-            includeNotInMenu = 0
-            navigationType = directory
-            navigationValue = 6
-        }
-
-        language.enable = 0
-        socialmedia.enable = 0
-        copyright.enable = 0
-        breadcrumb.enableLevel = 1
-    }
-}

@@ -1,0 +1,24 @@
+@import 'EXT:bootstrap_package/Configuration/TypoScript/constants.typoscript'
+
+page {
+    preloader.enable = 0
+    logo {
+        file = EXT:calendarize_premium/Resources/Public/Icons/Extension.svg
+        fileInverted = EXT:calendarize_premium/Resources/Public/Icons/Extension.svg
+        width = 48
+        height = 48
+    }
+
+    theme {
+        meta {
+            includeNotInMenu = 0
+            navigationType = directory
+            navigationValue = 6
+        }
+
+        language.enable = 0
+        socialmedia.enable = 0
+        copyright.enable = 0
+        breadcrumb.enableLevel = 1
+    }
+}

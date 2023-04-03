@@ -1,0 +1,39 @@
+@import 'EXT:bootstrap_package/Configuration/TypoScript/setup.typoscript'
+
+page {
+    includeJSFooterlibs.jquery = https://code.jquery.com/jquery-3.6.0.min.js
+    includeJSFooterlibs.jquery.external = 1
+    includeJSFooterlibs.jquery.excludeFromConcatenation = 1
+    includeJSFooterlibs.jquery.integrity = sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=
+
+
+    includeJSFooterlibs.isotope = https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js
+    includeJSFooterlibs.isotope.external = 1
+    includeJSFooterlibs.isotope.excludeFromConcatenation = 1
+
+    includeJSFooterlibs.js-cookie = https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js
+    includeJSFooterlibs.js-cookie.external = 1
+    includeJSFooterlibs.js-cookie.excludeFromConcatenation = 1
+
+    includeJSFooter.calendarize = EXT:calendarize_premium/Resources/Public/JavaScript/Calendarize.js
+    includeJSFooter.calendarize.excludeFromConcatenation = 1
+
+    includeCSS.calendarize = EXT:calendarize_premium/Resources/Public/Scss/Calendarize.scss
+}
+
+page {
+
+    10 {
+        templateRootPaths {
+            50 = EXT:portal/Resources/Private/Templates/BootstrapPackage/Templates/Page/
+        }
+
+        partialRootPaths {
+            50 = EXT:portal/Resources/Private/Templates/BootstrapPackage/Partials/Page/
+        }
+
+        layoutRootPaths {
+            50 = EXT:portal/Resources/Private/Templates/BootstrapPackage/Layouts/Page/
+        }
+    }
+}
