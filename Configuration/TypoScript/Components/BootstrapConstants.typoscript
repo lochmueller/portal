@@ -3,8 +3,8 @@
 page {
     preloader.enable = 0
     logo {
-        file = EXT:calendarize_premium/Resources/Public/Icons/Extension.svg
-        fileInverted = EXT:calendarize_premium/Resources/Public/Icons/Extension.svg
+        file = EXT:portal/Resources/Public/Icons/Extension.svg
+        fileInverted =
         width = 48
         height = 48
     }

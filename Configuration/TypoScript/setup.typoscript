@@ -1,3 +1,7 @@
 @import 'EXT:portal/Configuration/TypoScript/Components/Bootstrap.typoscript'
 @import 'EXT:portal/Configuration/TypoScript/Components/Login.typoscript'
 @import 'EXT:portal/Configuration/TypoScript/Components/News.typoscript'
+@import 'EXT:portal/Configuration/TypoScript/Components/Search.typoscript'
+
+
+page.includeCSS.portal = EXT:portal/Resources/Public/Scss/Theme.scss

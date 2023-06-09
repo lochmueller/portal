@@ -1,3 +1,4 @@
 @import 'EXT:portal/Configuration/TypoScript/Components/BootstrapConstants.typoscript'
 @import 'EXT:portal/Configuration/TypoScript/Components/LoginConstants.typoscript'
 @import 'EXT:portal/Configuration/TypoScript/Components/NewsConstants.typoscript'
+@import 'EXT:portal/Configuration/TypoScript/Components/SearchConstants.typoscript'

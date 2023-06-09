@@ -20,3 +20,9 @@ if ($GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginFootnote'] === ''
 if ($GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginHighlightColor'] === '') {
     $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginHighlightColor'] = '#2a9d8f';
 }
+
+if ((string)$GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] === 'New TYPO3 site') {
+    $GLOBALS['TYPO3_CONF_VARS']['SYS']['sitename'] = 'EXT:portal';
+}
+
+

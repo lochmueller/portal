@@ -1,0 +1,57 @@
+<html xmlns:f="http://typo3.org/ns/TYPO3/CMS/Fluid/ViewHelpers" data-namespace-typo3-fluid="true">
+<f:spaceless>
+    <div id="top"></div>
+
+    <main class="d-flex flex-nowrap body-bg{f:if(condition:theme.navigation.type, then:' body-bg-{theme.navigation.type}')}">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 280px;">
+            <a href="/packages/portal/Resources/Public" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32">
+                    <use xlink:href="#bootstrap"></use>
+                </svg>
+                <span class="fs-4">
+                <f:render partial="Header/Logo" arguments="{_all}"/>
+            </span>
+            </a>
+            <hr>
+
+            <f:render partial="Navigation/MainNavigation" arguments="{_all}"/>
+
+            <hr>
+            <f:render partial="Navigation/UserNavigation" arguments="{_all}"/>
+        </div>
+
+        <div class="b-example-divider b-example-vr"></div>
+
+        <div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-body-tertiary" style="width: 380px;">
+
+
+            <f:render partial="DropIn/Page/PageBefore" arguments="{_all}"/>
+            <f:render partial="Structure/CookieConsent" arguments="{_all}"/>
+            <a class="visually-hidden-focusable" href="#page-content">
+                <span>{f:translate(key: 'skiptomaincontent', extensionName: 'bootstrap_package')}</span>
+            </a>
+
+            <f:render section="Border" optional="true"/>
+            <f:render partial="Navigation/Breadcrumb" arguments="{_all}"/>
+
+            <div id="page-content" class="bp-page-content main-section">
+                <!--TYPO3SEARCH_begin-->
+                <f:render section="Main"/>
+                <!--TYPO3SEARCH_end-->
+            </div>
+
+            <f:comment>
+                <footer id="page-footer" class="bp-page-footer">
+                    <f:render partial="DropIn/Structure/FooterBefore" arguments="{_all}"/>
+                    <f:render section="Footer" optional="true"/>
+                    <f:render partial="Structure/FooterMeta" arguments="{_all}"/>
+                    <f:render partial="DropIn/Structure/FooterAfter" arguments="{_all}"/>
+                </footer>
+                <f:render partial="Structure/ScrollTop" arguments="{_all}"/>
+                <f:render partial="DropIn/Page/PageAfter" arguments="{_all}"/>
+            </f:comment>
+        </div>
+
+    </main>
+</f:spaceless>
+</html>

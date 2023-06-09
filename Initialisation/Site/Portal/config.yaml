@@ -1,4 +1,22 @@
-base: /
+addIpLocationToBrowserLanguage: ''
+allowAllPaths: false
+base: '/'
+disableRedirectWithBackendSession: false
+enableLanguageDetection: true
+errorHandling:
+  -
+    errorCode: 404
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=12'
+  -
+    errorCode: 403
+    errorHandler: Page
+    errorContentSource: 't3://page?uid=13'
+fallbackDetectionLanguage: 0
+forwardRedirectParameters: gclid
+languageDetectionMaxMindAccountId: ''
+languageDetectionMaxMindDatabasePath: ''
+languageDetectionMaxMindLicenseKey: ''
 languages:
   -
     title: English
@@ -26,5 +44,6 @@ languages:
     fallbackType: fallback
     fallbacks: '0'
     flag: de
+redirectHttpStatusCode: 307
 rootPageId: 1
-websiteTitle: 'Portal'
+websiteTitle: 'EXT:portal'

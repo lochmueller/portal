@@ -8,14 +8,15 @@
 
 - EXT:bootstrap_package (For base styling and theming)
 - EXT:felogin (For login process)
+- EXT:language_detection (for language detection and handling)
 - EXT:news (For news handling)
 - EXT:tt_address (Contact database)
 
-### Modules
+### Ideas...
 
 - EXT:sf_register (For Registration and edit profile functions)
 - EXT:fal_protect (for restrict access to FAL resources)
-- EXT:calendarize (Eevnts)
+- EXT:calendarize (Events)
 - EXT:news (News)
 - EXT:form (Custom Form processes)
 
