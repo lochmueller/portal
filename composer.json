@@ -24,8 +24,8 @@
     "typo3/cms-core": "^12.4",
     "typo3/cms-form": "^12.4",
     "lochmueller/language-detection": "^4.0",
-    "bk2k/bootstrap-package": "^13.0",
-    "friendsoftypo3/tt-address": "^7.1",
+    "bk2k/bootstrap-package": "^14.0",
+    "friendsoftypo3/tt-address": "^8.0",
     "tpwd/ke_search": "^5.0"
   },
   "suggest": {
