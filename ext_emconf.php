@@ -7,7 +7,7 @@ declare(strict_types=1);
  */
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Portal',
-    'description' => '',
+    'description' => 'Easy to use portal framework with many best practices. Ready to use portal/intranet for TYPO3!',
     'category' => 'fe',
     'version' => '0.0.1',
     'state' => 'stable',
@@ -20,6 +20,8 @@ $EM_CONF[$_EXTKEY] = [
             'news' => '*',
             'tt_address' => '*',
             'bootstrap_package' => '*',
+            'language_detection' => '*',
+            'ke_search' => '*',
         ],
     ],
     'autoload' => [

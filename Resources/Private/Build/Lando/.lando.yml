@@ -1,0 +1,53 @@
+name: portal
+recipe: lamp
+proxy:
+  mailhog:
+    - mail-portal.lndo.site
+config:
+  php: '8.1'
+  webroot: public
+  database: mariadb:10.4
+services:
+  appserver:
+    build_as_root:
+      - /app/packages/portal/Resources/Private/Build/Lando/install.sh
+    build:
+      - /app/packages/portal/Resources/Private/Build/Lando/prepare.sh
+    install_dependencies_as_root:
+      - docker-php-ext-configure gd --with-freetype=/usr/include/ --with-jpeg=/usr/include/
+      - a2enmod headers
+      - a2enmod expires
+    overrides:
+      environment:
+        TYPO3_CONTEXT: Development/Lando
+    scanner:
+      okCodes:
+        - 404
+        - 200
+        - 307
+  mailhog:
+    type: mailhog:v1.0.0
+    portforward: false
+    hogfrom:
+      - appserver
+tooling:
+  typo3cms:
+    service: appserver
+    cmd: /app/vendor/bin/typo3cms
+  typo3:
+    service: appserver
+    cmd: /app/vendor/bin/typo3
+  typo3:init:
+    description: Init the TYPO3 Container
+    cmd:
+      - appserver: echo "-------> Start database import:"
+      - database: /helpers/sql-import.sh files/typo3.sql.gz
+      - appserver: echo "-------> Add Lando specific changes:"
+      - database: /helpers/sql-import.sh files/lando.sql --no-wipe
+      - appserver: echo "-------> Start TYPO3 configuration:"
+      - appserver: composer typo3:kickstart
+  typo3:createLocalAdmin:
+    description: TYPO3 - Create a local admin user for development
+    cmd:
+      - appserver: /app/vendor/bin/typo3 backend:user:create --username=Local_Admin1 --password=Local_Admin1 --email=Local_Admin1@localhost.de --maintainer --admin
+

@@ -35,5 +35,23 @@ page {
         layoutRootPaths {
             50 = EXT:portal/Resources/Private/Layouts/BootstrapPackage/Page/
         }
+
+        variables {
+            userName = TEXT
+            userName.value = no-user
+        }
+
+        dataProcessing {
+            8500 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+            8500 {
+                as = userAvatar
+            }
+            8510 = BK2K\BootstrapPackage\DataProcessing\IconsDataProcessor
+            8510 {
+                iconSet = EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/
+                iconIdentifier = EXT:bootstrap_package/Resources/Public/Images/Icons/Ionicons/android-contact.svg
+                as = userAvatarDefault
+              }
+        }
     }
 }

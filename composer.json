@@ -1,7 +1,7 @@
 {
   "name": "lochmueller/portal",
   "type": "typo3-cms-extension",
-  "description": "Portal for TYPO3",
+  "description": "Easy to use portal framework with many best practices. Ready to use portal/intranet for TYPO3!",
   "autoload": {
     "psr-4": {
       "Lochmueller\\Portal\\": "Classes/"
