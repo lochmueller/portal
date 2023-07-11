@@ -1,0 +1,57 @@
+plugin.tx_form {
+    view {
+        partialRootPaths.600 = EXT:portal/Resources/Private/Extension/Form/Partials/
+        layoutRootPaths.600 = EXT:portal/Resources/Private/Extension/Form/Layouts/
+        templateRootPaths.600 = EXT:portal/Resources/Private/Extension/Form/Templates/
+    }
+    settings {
+        yamlConfigurations {
+            3298472934 = EXT:portal/Configuration/Yaml/Forms.yaml
+        }
+    }
+}
+
+module.tx_form {
+    settings {
+        yamlConfigurations {
+            3298472934 = EXT:portal/Configuration/Yaml/Forms.yaml
+        }
+    }
+}
+
+[applicationContext == "Development/Lando"]
+    plugin.tx_form.settings.yamlConfigurations.3298472935 = EXT:portal/Configuration/Yaml/FormsDevelopment.yaml
+    module.tx_form.settings.yamlConfigurations.3298472935 = EXT:portal/Configuration/Yaml/FormsDevelopment.yaml
+[end]
+
+# Prefills
+plugin.tx_form {
+   settings {
+      formDefinitionOverrides {
+         profile {
+            renderables {
+               0 {
+                  renderables {
+                     fieldWithTranslationArguments {
+                        renderingOptions {
+                           translation {
+                              arguments {
+                                 label {
+                                 // @todo prefill
+                                    0 = TEXT
+                                    0.typolink {
+                                       parameter = 42
+                                       returnLast = url
+                                    }
+                                 }
+                              }
+                           }
+                        }
+                     }
+                  }
+               }
+            }
+         }
+      }
+   }
+}

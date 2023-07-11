@@ -1,0 +1,76 @@
+
+renderingOptions:
+  submitButtonLabel: Submit
+type: Form
+identifier: profile
+label: Profile
+prototypeName: standard
+finishers:
+  -
+    options:
+      message: 'Your profile was updated.'
+      contentElementUid: ''
+    identifier: Confirmation
+renderables:
+  -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
+    type: Page
+    identifier: form
+    label: ''
+    renderables:
+      -
+        type: GridColumn
+        identifier: gridcolumn-left
+        label: ''
+        properties:
+          gridColumnClassAutoConfiguration:
+            viewPorts:
+              xs:
+                numbersOfColumnsToUse: '12'
+              sm:
+                numbersOfColumnsToUse: '6'
+              md:
+                numbersOfColumnsToUse: '6'
+              lg:
+                numbersOfColumnsToUse: '6'
+        renderables:
+          -
+            defaultValue: ''
+            type: Text
+            identifier: company
+            label: Firstname
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: Firstname
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+          -
+            defaultValue: ''
+            type: Text
+            identifier: text-1
+            label: Lastname
+            properties:
+              fluidAdditionalAttributes:
+                placeholder: Lastname
+                required: required
+            validators:
+              -
+                identifier: NotEmpty
+      -
+        defaultValue: ''
+        type: Text
+        identifier: email
+        label: E-Mail
+        properties:
+          fluidAdditionalAttributes:
+            placeholder: E-Mail
+            required: required
+        validators:
+          -
+            identifier: NotEmpty
+          -
+            identifier: EmailAddress

@@ -22,6 +22,8 @@ $EM_CONF[$_EXTKEY] = [
             'bootstrap_package' => '*',
             'language_detection' => '*',
             'ke_search' => '*',
+            'reactions' => '*',
+            'webhooks' => '*',
         ],
     ],
     'autoload' => [
