@@ -1,6 +1,6 @@
 
 renderingOptions:
-  submitButtonLabel: Submit
+  submitButtonLabel: 'Save profile'
 type: Form
 identifier: profile
 label: Profile

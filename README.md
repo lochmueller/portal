@@ -6,13 +6,15 @@
 
 ### Base 
 
-Core:
+Core (included):
 - EXT:felogin (for login process)
 - EXT:reactions & EXT:webhooks (for webhook on different user actions)
 - EXT:form (for form processes)
+- EXT:backend (access all records with regular TYPO3 core functions and usage hte backend user access management)
 
-Third party:
+Third party (included):
 - EXT:bootstrap_package (for base styling and theming)
+- EXT:container (for flexible grid system on pages)
 - EXT:language_detection (for language detection and handling)
 - EXT:news (for news handling)
 - EXT:tt_address (for contact database)
@@ -32,15 +34,6 @@ The extension is only available in composer mode, because it is much more flexib
 8. Create a "Local_Admin1" admin user (password is "Local_Admin1") `lando typo3:createLocalAdmin`
 9. Call https://portal.lndo.site/ & https://portal.lndo.site/typo3/
 
-### Ideas...
-
-- EXT:sf_register (For Registration and edit profile functions)
-- EXT:fal_protect (for restrict access to FAL resources)
-- EXT:calendarize (Events)
-- EXT:news (News)
-- EXT:form (Custom Form processes)
-- Core Events EXT:reactions
-
 ## Credits
 
 Login image:
@@ -49,12 +42,18 @@ Login image:
 
 ## Ideas
 
-- EXT:container
+- EXT:sf_register (For Registration and edit profile functions)
+- EXT:fal_protect (for restrict access to FAL resources)
+- EXT:calendarize (Events)
+- EXT:news (News)
+- EXT:form (Custom Form processes)
+- Core Events EXT:reactions
 - Add reactions
 - Add webhooks
 - Theme ideas: https://startbootstrap.com/previews/sb-admin-2
 - composer require tpwd/ke_search
 - EXT:form registration
 - Kickstart Prozess (Wizard)
+- EXT:oauth2_client
 
 - https://undraw.co/

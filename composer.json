@@ -20,7 +20,7 @@
     }
   ],
   "require": {
-    "php": "^8.1",
+    "php": "^8.2",
     "typo3/cms-core": "^12.4",
     "typo3/cms-form": "^12.4",
     "typo3/cms-reactions": "^12.4",
@@ -28,7 +28,8 @@
     "lochmueller/language-detection": "^4.0",
     "bk2k/bootstrap-package": "^14.0",
     "friendsoftypo3/tt-address": "^8.0",
-    "tpwd/ke_search": "^5.0"
+    "tpwd/ke_search": "^5.0",
+    "b13/container": "^2.2"
   },
   "suggest": {
     "typo3/cms-felogin": "^12.4",
