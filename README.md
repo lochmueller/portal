@@ -29,8 +29,8 @@ The extension is only available in composer mode, because it is much more flexib
 3. Install the EXT:portal incl. dependencies `composer require lochmueller/portal`
 4. Copy Lando base file `cp packages/portal/Resources/Private/Build/Lando/.lando.yml .`
 5. Start lando virtualization `lando start`
-6. --- tbd. Import base DB
-7. --- tbd. setup incl. Introduction information
+6. Import base DB `lando typo3 impexp:import --force-uid --enable-log vendor/lochmueller/portal/Initialisation/data.xml`
+7. Copy site configuration `mkdir -p config/sites/portal && cp vendor/lochmueller/portal/Initialisation/Site/Portal/config.yaml config/sites/portal/config.yaml`
 8. Create a "Local_Admin1" admin user (password is "Local_Admin1") `lando typo3:createLocalAdmin`
 9. Call https://portal.lndo.site/ & https://portal.lndo.site/typo3/
 
@@ -39,6 +39,12 @@ The extension is only available in composer mode, because it is much more flexib
 Login image:
 - https://www.pexels.com/photo/beautiful-view-of-moraine-lake-2662116/
 
+
+## DEV Create new export file
+
+Export: `lando typo3 impexp:export --levels=99 --table=_ALL --record=_ALL --title="EXT:portal Export" data`
+
+Import: `lando typo3 impexp:import --force-uid --enable-log vendor/lochmueller/portal/Initialisation/data.xml`
 
 ## Ideas
 

@@ -1,11 +1,11 @@
 ###############################
-#### BACKENDLAYOUT: LOGIN ####
+#### BACKENDLAYOUT: PUBLIC ####
 ###############################
 mod {
     web_layout {
         BackendLayouts {
-            login {
-                title = Login
+            public {
+                title = Public
                 config {
                     backend_layout {
                         colCount = 1

@@ -1,36 +1,25 @@
+
+renderingOptions:
+  submitButtonLabel: register
 type: Form
 identifier: registration
-label: 'Registration'
+label: Registration
 prototypeName: standard
 finishers:
   -
-    identifier: EmailToReceiver
     options:
-      subject: '{subject}'
-      senderAddress: '{email}'
-      senderName: '{fullname}'
-      replyToRecipients:
-        '{email}': ''
-      format: html
-      attachUploads: true
-      recipients: {  }
-  -
-    identifier: Redirect
-    options:
-      pageUid: ''
-      additionalParameters: ''
+      message: ''
+      contentElementUid: '13'
+    identifier: Confirmation
 renderables:
   -
+    renderingOptions:
+      previousButtonLabel: 'Previous step'
+      nextButtonLabel: 'Next step'
     type: Page
     identifier: form
     label: ''
     renderables:
-      -
-        properties:
-          text: 'Required fields are marked with *'
-        type: StaticText
-        identifier: mandatory
-        label: 'Your personal data'
       -
         type: GridRow
         identifier: gridrow
@@ -51,38 +40,33 @@ renderables:
                     numbersOfColumnsToUse: '6'
                   lg:
                     numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
+                  xxl:
+                    numbersOfColumnsToUse: '6'
             renderables:
               -
+                defaultValue: ''
                 type: Text
                 identifier: fullname
-                label: 'Full name and surname'
+                label: Firstname
                 properties:
                   fluidAdditionalAttributes:
-                    placeholder: 'Full name and surname'
                     required: required
                 validators:
                   -
                     identifier: NotEmpty
               -
+                defaultValue: ''
                 type: Text
                 identifier: company
-                label: Company
+                label: Lastname
                 properties:
                   fluidAdditionalAttributes:
-                    placeholder: Company
-              -
-                type: Text
-                identifier: email
-                label: Email
-                properties:
-                  fluidAdditionalAttributes:
-                    placeholder: Email
                     required: required
                 validators:
                   -
                     identifier: NotEmpty
-                  -
-                    identifier: EmailAddress
           -
             type: GridColumn
             identifier: gridcolumn-right
@@ -100,23 +84,25 @@ renderables:
                     numbersOfColumnsToUse: '6'
             renderables:
               -
+                defaultValue: ''
                 type: Text
-                identifier: subject
-                label: Subject
+                identifier: email
+                label: E-Mail
                 properties:
                   fluidAdditionalAttributes:
-                    placeholder: Subject
                     required: required
                 validators:
                   -
                     identifier: NotEmpty
+                  -
+                    identifier: EmailAddress
               -
-                type: Textarea
-                identifier: message
-                label: Message
+                defaultValue: ''
+                type: Password
+                identifier: password-1
+                label: Password
                 properties:
                   fluidAdditionalAttributes:
-                    placeholder: Message
                     required: required
                 validators:
                   -
