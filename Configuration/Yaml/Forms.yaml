@@ -1,3 +1,7 @@
+imports:
+  - { resource: './FormElements/Form.yaml' }
+  - { resource: './Finishers/Webhook.yaml' }
+
 TYPO3:
   CMS:
     Form:

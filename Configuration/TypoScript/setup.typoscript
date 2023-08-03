@@ -6,3 +6,11 @@
 
 
 page.includeCSS.portal = EXT:portal/Resources/Public/Scss/Theme.scss
+
+
+page.includeJSLibs.topwire = EXT:topwire/Resources/Public/JavaScript/topwire.js
+page.includeJSLibs.topwire.type = module
+page.includeJSLibs.topwire.async = 1
+page.includeJSLibs.topwire.defer = 1
+page.includeJSLibs.topwire.disableCompression = 1
+page.includeJSLibs.topwire.excludeFromConcatenation = 1

@@ -1,0 +1,31 @@
+prototypes:
+  standard:
+    formElementsDefinition:
+      Form:
+        formEditor:
+          editors:
+            900:
+              selectOptions:
+                300:
+                  value: Webhook
+                  label: formEditor.elements.Form.editor.finishers.Webhook.label
+          propertyCollections:
+            finishers:
+              300:
+                identifier: Webhook
+                editors:
+                  100:
+                    identifier: header
+                    templateName: Inspector-CollectionElementHeaderEditor
+                    label: formEditor.elements.Form.finisher.Webhook.editor.header.label
+                  300:
+                    identifier: messageName
+                    templateName: Inspector-TextEditor
+                    label: formEditor.elements.Form.finisher.Webhook.editor.messageName.label
+                    propertyPath: options.messageName
+                  9999:
+                    identifier: removeButton
+                    templateName: Inspector-RemoveElementEditor
+    formEditor:
+      translationFiles:
+        90: 'EXT:portal/Resources/Private/Language/Form.xlf'

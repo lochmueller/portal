@@ -27,7 +27,7 @@ The extension is only available in composer mode, because it is much more flexib
 1. Create the composer based TYPO3 project `composer create-project typo3/cms-base-distribution:"^12.4" portal`
 2. Switch to new folder `cd portal`
 3. Install the EXT:portal incl. dependencies `composer require lochmueller/portal`
-4. Copy Lando base file `cp packages/portal/Resources/Private/Build/Lando/.lando.yml .`
+4. Copy Lando base file `cp vendor/lochmueller/portal/Resources/Private/Build/Lando/.lando.yml .`
 5. Start lando virtualization `lando start`
 6. Import base DB `lando typo3 impexp:import --force-uid --enable-log vendor/lochmueller/portal/Initialisation/data.xml`
 7. Copy site configuration `mkdir -p config/sites/portal && cp vendor/lochmueller/portal/Initialisation/Site/Portal/config.yaml config/sites/portal/config.yaml`

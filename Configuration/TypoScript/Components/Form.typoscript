@@ -1,8 +1,8 @@
 plugin.tx_form {
     view {
-        partialRootPaths.600 = EXT:portal/Resources/Private/Extension/Form/Partials/
-        layoutRootPaths.600 = EXT:portal/Resources/Private/Extension/Form/Layouts/
-        templateRootPaths.600 = EXT:portal/Resources/Private/Extension/Form/Templates/
+        partialRootPaths.600 = EXT:portal/Resources/Private/Partials/Form/
+        layoutRootPaths.600 = EXT:portal/Resources/Private/Layouts/Form/
+        templateRootPaths.600 = EXT:portal/Resources/Private/Templates/Form/
     }
     settings {
         yamlConfigurations {

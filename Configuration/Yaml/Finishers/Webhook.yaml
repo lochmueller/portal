@@ -1,0 +1,18 @@
+prototypes:
+  standard:
+    finishersDefinition:
+      Webhook:
+        implementationClassName: Lochmueller\Portal\Domain\Finishers\WebhookFinisher
+        formEditor:
+          iconIdentifier: form-finisher
+          label: formEditor.elements.Form.finisher.Webhook.editor.header.label
+          predefinedDefaults:
+            options:
+              messageName: ''
+        FormEngine:
+          label: tt_content.finishersDefinition.Webhook.label
+          elements:
+            messageName:
+              label: tt_content.finishersDefinition.Webhook.messageName.label
+              config:
+                type: input
