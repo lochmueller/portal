@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="EXT:form/Resources/Private/Language/Database.xlf" date="2016-08-21T20:15:32Z" product-name="form">
+        <header/>
+        <body>
+            <trans-unit id="tt_content.finishersDefinition.Webhook.label" resname="tt_content.finishersDefinition.Webhook.label" xml:space="preserve">
+                <source>Webhook</source>
+            </trans-unit>
+            <trans-unit id="formEditor.elements.Form.editor.finishers.Webhook.label" resname="formEditor.elements.Form.editor.finishers.Webhook.label" xml:space="preserve">
+                <source>Webhook execution</source>
+            </trans-unit>
+            <trans-unit id="formEditor.elements.Form.finisher.Webhook.editor.messageName.label" resname="formEditor.elements.Form.finisher.Webhook.editor.header.label" xml:space="preserve">
+                <source>Message name</source>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

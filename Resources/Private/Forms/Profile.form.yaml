@@ -1,14 +1,18 @@
 
 renderingOptions:
-  submitButtonLabel: 'Save profile'
+  submitButtonLabel: save
 type: Form
-identifier: profile
+identifier: profileForm
 label: Profile
 prototypeName: standard
 finishers:
   -
     options:
-      message: 'Your profile was updated.'
+      messageName: 'ProfileFormSubmittedMessage'
+    identifier: Webhook
+  -
+    options:
+      message: 'Vielen Dank'
       contentElementUid: ''
     identifier: Confirmation
 renderables:
@@ -21,56 +25,78 @@ renderables:
     label: ''
     renderables:
       -
-        type: GridColumn
-        identifier: gridcolumn-left
+        type: GridRow
+        identifier: gridrow
         label: ''
-        properties:
-          gridColumnClassAutoConfiguration:
-            viewPorts:
-              xs:
-                numbersOfColumnsToUse: '12'
-              sm:
-                numbersOfColumnsToUse: '6'
-              md:
-                numbersOfColumnsToUse: '6'
-              lg:
-                numbersOfColumnsToUse: '6'
         renderables:
           -
-            defaultValue: ''
-            type: Text
-            identifier: company
-            label: Firstname
+            type: GridColumn
+            identifier: gridcolumn-left
+            label: ''
             properties:
-              fluidAdditionalAttributes:
-                placeholder: Firstname
-                required: required
-            validators:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
+                  xl:
+                    numbersOfColumnsToUse: '6'
+                  xxl:
+                    numbersOfColumnsToUse: '6'
+            renderables:
               -
-                identifier: NotEmpty
+                defaultValue: ''
+                type: Text
+                identifier: fullname
+                label: Firstname
+                properties:
+                  fluidAdditionalAttributes:
+                    required: required
+                validators:
+                  -
+                    identifier: NotEmpty
+              -
+                defaultValue: ''
+                type: Text
+                identifier: company
+                label: Lastname
+                properties:
+                  fluidAdditionalAttributes:
+                    required: required
+                validators:
+                  -
+                    identifier: NotEmpty
           -
-            defaultValue: ''
-            type: Text
-            identifier: text-1
-            label: Lastname
+            type: GridColumn
+            identifier: gridcolumn-right
+            label: ''
             properties:
-              fluidAdditionalAttributes:
-                placeholder: Lastname
-                required: required
-            validators:
+              gridColumnClassAutoConfiguration:
+                viewPorts:
+                  xs:
+                    numbersOfColumnsToUse: '12'
+                  sm:
+                    numbersOfColumnsToUse: '6'
+                  md:
+                    numbersOfColumnsToUse: '6'
+                  lg:
+                    numbersOfColumnsToUse: '6'
+            renderables:
               -
-                identifier: NotEmpty
-      -
-        defaultValue: ''
-        type: Text
-        identifier: email
-        label: E-Mail
-        properties:
-          fluidAdditionalAttributes:
-            placeholder: E-Mail
-            required: required
-        validators:
-          -
-            identifier: NotEmpty
-          -
-            identifier: EmailAddress
+                defaultValue: ''
+                type: Text
+                identifier: email
+                label: E-Mail
+                properties:
+                  fluidAdditionalAttributes:
+                    required: required
+                validators:
+                  -
+                    identifier: NotEmpty
+                  -
+                    identifier: EmailAddress

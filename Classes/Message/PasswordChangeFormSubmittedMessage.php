@@ -10,19 +10,8 @@ use TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent;
 
 #[WebhookMessage(
     identifier: 'portal/form/password-changed',
-    description: '... when a EXT:portal password is changed.'
+    description: '... when a EXT:portal password change form is submitted.'
 )]
-final class PasswordChangedMessage implements WebhookMessageInterface
+final class PasswordChangeFormSubmittedMessage extends AbstractFormMessage
 {
-    public function __construct(
-
-        // @todo Handle in EXT:form
-    )
-    {
-    }
-
-    public function jsonSerialize()
-    {
-       // @todo
-    }
 }

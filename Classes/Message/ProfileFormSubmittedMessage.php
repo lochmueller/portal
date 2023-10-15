@@ -10,19 +10,8 @@ use TYPO3\CMS\Core\Resource\Event\AfterFileAddedEvent;
 
 #[WebhookMessage(
     identifier: 'portal/form/profile-saved',
-    description: '... when a EXT:portal profile form is saved.'
+    description: '... when a EXT:portal profile form is submitted.'
 )]
-final class ProfileSavedMessage implements WebhookMessageInterface
+final class ProfileFormSubmittedMessage extends AbstractFormMessage
 {
-    public function __construct(
-
-        // @todo Handle in EXT:form
-    )
-    {
-    }
-
-    public function jsonSerialize()
-    {
-       // @todo
-    }
 }

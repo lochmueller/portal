@@ -19,6 +19,12 @@
       "homepage": "https://github.com/lochmueller"
     }
   ],
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/topwire/topwire"
+    }
+  ],
   "require": {
     "php": "^8.2",
     "typo3/cms-core": "^12.4",
@@ -29,7 +35,8 @@
     "bk2k/bootstrap-package": "^14.0",
     "friendsoftypo3/tt-address": "^8.0",
     "tpwd/ke_search": "^5.0",
-    "b13/container": "^2.2"
+    "b13/container": "^2.2",
+    "topwrire/topwire": "dev-main"
   },
   "suggest": {
     "typo3/cms-felogin": "^12.4",
