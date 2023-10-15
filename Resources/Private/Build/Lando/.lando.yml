@@ -31,9 +31,6 @@ services:
     hogfrom:
       - appserver
 tooling:
-  typo3cms:
-    service: appserver
-    cmd: /app/vendor/bin/typo3cms
   typo3:
     service: appserver
     cmd: /app/vendor/bin/typo3
