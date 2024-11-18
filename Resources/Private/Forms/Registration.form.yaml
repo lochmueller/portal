@@ -8,9 +8,40 @@ prototypeName: standard
 finishers:
   -
     options:
-      message: ''
-      contentElementUid: '13'
-    identifier: Confirmation
+      -
+        table: fe_users
+        mode: insert
+        elements:
+          email:
+            mapOnDatabaseColumn: username
+          password:
+            mapOnDatabaseColumn: password
+          firstname:
+            mapOnDatabaseColumn: first_name
+          lastname:
+            mapOnDatabaseColumn: last_name
+        databaseColumnMappings:
+          pid:
+            value: 4
+          tstamp:
+            value: '{__currentTimestamp}'
+          crdate:
+            value: '{__currentTimestamp}'
+          disable:
+            value: 1
+          description:
+            value: 'Register via EXT:portal'
+    identifier: SaveToDatabase
+  -
+    options:
+      messageName: RegistrationFormSubmittedMessage
+    identifier: Webhook
+  -
+    options:
+      messageBody: 'Thank you for your registration. Please check your mail account and verify your email address.'
+      messageTitle: Registration
+      messageCode: 200
+    identifier: FlashMessage
 renderables:
   -
     renderingOptions:
@@ -48,25 +79,39 @@ renderables:
               -
                 defaultValue: ''
                 type: Text
-                identifier: fullname
+                identifier: firstname
                 label: Firstname
                 properties:
                   fluidAdditionalAttributes:
                     required: required
+                    minlength: '2'
+                    maxlength: '100'
                 validators:
                   -
                     identifier: NotEmpty
+                  -
+                    options:
+                      minimum: '2'
+                      maximum: '100'
+                    identifier: StringLength
               -
                 defaultValue: ''
                 type: Text
-                identifier: company
+                identifier: lastname
                 label: Lastname
                 properties:
                   fluidAdditionalAttributes:
                     required: required
+                    minlength: '2'
+                    maxlength: '100'
                 validators:
                   -
                     identifier: NotEmpty
+                  -
+                    options:
+                      minimum: '2'
+                      maximum: '100'
+                    identifier: StringLength
           -
             type: GridColumn
             identifier: gridcolumn-right
@@ -99,11 +144,13 @@ renderables:
               -
                 defaultValue: ''
                 type: Password
-                identifier: password-1
+                identifier: password
                 label: Password
                 properties:
                   fluidAdditionalAttributes:
                     required: required
+                    autocomplete: new-password
+                  elementDescription: 'Please enter a secure password.'
                 validators:
                   -
                     identifier: NotEmpty

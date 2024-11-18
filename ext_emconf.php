@@ -21,7 +21,6 @@ $EM_CONF[$_EXTKEY] = [
             'tt_address' => '*',
             'bootstrap_package' => '*',
             'language_detection' => '*',
-            'ke_search' => '*',
             'reactions' => '*',
             'webhooks' => '*',
             'container' => '*',

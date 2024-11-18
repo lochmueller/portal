@@ -2,7 +2,7 @@
 
 # Backend configuration
 if ($GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginLogo'] === '') {
-    $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginLogo'] = 'EXT:portal/Resources/Public/Icons/ExtensionBig.svg';
+    $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginLogo'] = 'EXT:portal/Resources/Public/Icons/Extension.svg';
 }
 
 if ($GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['backendLogo'] === '') {

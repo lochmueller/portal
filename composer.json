@@ -27,16 +27,13 @@
   ],
   "require": {
     "php": "^8.2",
-    "typo3/cms-core": "^12.4",
-    "typo3/cms-form": "^12.4",
-    "typo3/cms-reactions": "^12.4",
-    "typo3/cms-webhooks": "^12.4",
-    "lochmueller/language-detection": "^4.0",
-    "bk2k/bootstrap-package": "^14.0",
-    "friendsoftypo3/tt-address": "^8.0",
-    "tpwd/ke_search": "^5.0",
-    "b13/container": "^2.2",
-    "topwrire/topwire": "dev-main"
+    "typo3/cms-core": "^13.4",
+    "typo3/cms-form": "^13.4",
+    "typo3/cms-reactions": "^13.4",
+    "typo3/cms-webhooks": "^13.4",
+    "georgringer/news": "^12.1",
+    "bk2k/bootstrap-package": "^15.0",
+    "friendsoftypo3/tt-address": "^9.0"
   },
   "suggest": {
     "typo3/cms-felogin": "^12.4",

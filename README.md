@@ -63,3 +63,7 @@ Import: `lando typo3 impexp:import --force-uid --enable-log /app/vendor/lochmuel
 - EXT:oauth2_client
 
 - https://undraw.co/
+
+
+"lochmueller/calendarize": "^13.0",
+"lochmueller/language-detection": "^4.0",

@@ -16,6 +16,10 @@ use TYPO3\CMS\Webhooks\Message\PageModificationMessage;
 
 class WebhookFinisher extends AbstractFinisher
 {
+    public function __construct(protected MessageBusInterface $messageBus)
+    {
+    }
+
     protected $defaultOptions = [
         'messageName' => '',
     ];
@@ -33,20 +37,6 @@ class WebhookFinisher extends AbstractFinisher
         }
 
         $message = new $messageName($this->finisherContext->getFormRuntime(), $this->finisherContext->getFormValues());
-
-        $this->dispatchMessage($message);
+        $this->messageBus->dispatch($message);
     }
-
-    protected function dispatchMessage(AbstractFormMessage $message): void
-    {
-        try {
-            // @todo handle
-            // GeneralUtility::makeInstance(MessageBusInterface::class)->dispatch($message);
-        } catch (\Throwable $e) {
-            // @todo handle
-            DebuggerUtility::var_dump($e);
-            die();
-        }
-    }
-
 }

@@ -15,10 +15,10 @@ page {
     includeJSFooterlibs.js-cookie.external = 1
     includeJSFooterlibs.js-cookie.excludeFromConcatenation = 1
 
-    includeJSFooter.calendarize = EXT:calendarize_premium/Resources/Public/JavaScript/Calendarize.js
-    includeJSFooter.calendarize.excludeFromConcatenation = 1
+    #includeJSFooter.calendarize = EXT:calendarize_premium/Resources/Public/JavaScript/Calendarize.js
+    #includeJSFooter.calendarize.excludeFromConcatenation = 1
 
-    includeCSS.calendarize = EXT:calendarize_premium/Resources/Public/Scss/Calendarize.scss
+    #includeCSS.calendarize = EXT:calendarize_premium/Resources/Public/Scss/Calendarize.scss
 }
 
 page {
