@@ -15,10 +15,9 @@ Core (included):
 Third party (included):
 - EXT:bootstrap_package (for base styling and theming)
 - EXT:container (for flexible grid system on pages)
-- EXT:language_detection (for language detection and handling)
+- @todo EXT:language_detection (for language detection and handling)
 - EXT:news (for news handling)
 - EXT:tt_address (for contact database)
-- EXT:ke_search (for search on fe-group specific data)
 
 ### Installation
 
@@ -48,10 +47,9 @@ Import: `lando typo3 impexp:import --force-uid --enable-log /app/vendor/lochmuel
 
 ## Ideas
 
-- EXT:sf_register (For Registration and edit profile functions)
+- EXT:ke_search (for search on fe-group specific data)
 - EXT:fal_protect (for restrict access to FAL resources)
 - EXT:calendarize (Events)
-- EXT:news (News)
 - EXT:form (Custom Form processes)
 - Core Events EXT:reactions
 - Add reactions

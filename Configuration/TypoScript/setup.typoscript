@@ -5,8 +5,7 @@
 @import 'EXT:portal/Configuration/TypoScript/Components/Form.typoscript'
 
 
-page.includeCSS.portal = EXT:portal/Resources/Public/Scss/Theme.scss
-
+page.includeCSS.theme = EXT:portal/Resources/Public/Scss/theme.scss
 
 page.includeJSLibs.topwire = EXT:topwire/Resources/Public/JavaScript/topwire.js
 page.includeJSLibs.topwire.type = module

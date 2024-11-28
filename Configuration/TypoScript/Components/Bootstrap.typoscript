@@ -25,15 +25,15 @@ page {
 
     10 {
         templateRootPaths {
-            50 = EXT:portal/Resources/Private/Templates/BootstrapPackage/Page/
+            50 = EXT:portal/Resources/Private/Templates/Page/
         }
 
         partialRootPaths {
-            50 = EXT:portal/Resources/Private/Partials/BootstrapPackage/Page/
+            50 = EXT:portal/Resources/Private/Partials/Page/
         }
 
         layoutRootPaths {
-            50 = EXT:portal/Resources/Private/Layouts/BootstrapPackage/Page/
+            50 = EXT:portal/Resources/Private/Layouts/Page/
         }
 
         variables {

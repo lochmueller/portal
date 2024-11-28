@@ -2,6 +2,7 @@
 
 # Backend configuration
 if ($GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginLogo'] === '') {
+    // @todo handle
     $GLOBALS['TYPO3_CONF_VARS']['EXTENSIONS']['backend']['loginLogo'] = 'EXT:portal/Resources/Public/Icons/Extension.svg';
 }
 

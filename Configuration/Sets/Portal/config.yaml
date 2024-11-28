@@ -1,0 +1,5 @@
+name: lochmueller/portal
+label: Portal
+# @todo migrate to sets
+#dependencies:
+#  - bootstrap-package/full
